@@ -4,14 +4,14 @@ const config = {
     itemSelector: 'li.EntityList-item',
     hrefAttribute: 'data-href',
     checkSelector: 'a.ClassifiedDetailOwnerDetails-logo',
-    blacklist: ['agencija', 'investitor']
+    blacklist: ['agencija', 'investitor', 'trgovina']
   },
   oglasnik: {
     listSelector: '#classifieds-list',
     itemSelector: 'a.classified-box',
     hrefAttribute: 'href',
     checkSelector: 'div.top-details a',
-    blacklist: ['trgovina']
+    blacklist: ['trgovina','agencija', 'investitor', 'trgovina']
   },
   indexOglasi: {
     listSelector: 'div[class^="ant-row-flex paginationAds__adList"]',
@@ -106,11 +106,9 @@ function loadInIframe(url) {
 
 async function processAds() {
   const siteConfig = getSiteConfig();
-  console.log(siteConfig);
   if (!siteConfig) return;
 
   const list = document.querySelector(siteConfig.listSelector);
-  console.log(list);
   if (!list) return;
 
   const items = list.querySelectorAll(siteConfig.itemSelector);

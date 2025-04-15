@@ -7,14 +7,14 @@
   "host_permissions": [
     "https://www.njuskalo.hr/*",
     "https://www.oglasnik.hr/*",
-    "https://www.index.hr/*"
+    "https://www.index.hr/oglasi/*"
   ],
   "content_scripts": [
     {
       "matches": [
         "https://www.njuskalo.hr/*",
         "https://www.oglasnik.hr/*",
-        "https://www.index.hr/*"
+        "https://www.index.hr/oglasi/*"
       ],
       "js": ["content.js"],
       "run_at": "document_idle"
