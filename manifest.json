@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Nekretnine Bez Agencija",
   "version": "1.0",
-  "description": "Kada pregledavate Njuškalo, Index Oglse i Oglasnik, miče vam oglase koje oglašavaju agencije.",
+  "description": "Kada pregledavate Njuškalo, Index Oglase i Oglasnik, sakriva vam oglase koje oglašavaju agencije.",
   "permissions": ["scripting"],
   "host_permissions": [
     "https://www.njuskalo.hr/*",
