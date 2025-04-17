@@ -4,7 +4,7 @@ const config = {
     itemSelector: 'li.EntityList-item',
     hrefAttribute: 'data-href',
     checkSelector: 'a.ClassifiedDetailOwnerDetails-logo',
-    blacklist: ['agencija', 'investitor', 'trgovina']
+    blacklist: ['agencija', 'investitor', 'trgovina', 'tvrtka']
   },
   oglasnik: {
     listSelector: '#classifieds-list',
