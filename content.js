@@ -152,4 +152,5 @@ async function processAds() {
 
 window.addEventListener('load', () => {
     setTimeout(processAds, 2000); // slight delay to allow dynamic content loading
+    setInterval(processAds, 10000);
 });
