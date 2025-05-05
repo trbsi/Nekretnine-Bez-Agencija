@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Nekretnine Bez Agencija",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Kada pregledavate Njuškalo, Index Oglase i Oglasnik, sakriva vam oglase koje oglašavaju agencije.",
   "permissions": [],
   "host_permissions": [
@@ -16,7 +16,9 @@
         "https://www.oglasnik.hr/*",
         "https://www.index.hr/oglasi/*"
       ],
-      "js": ["content.js"],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ],
